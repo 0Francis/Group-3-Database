@@ -1,3 +1,13 @@
+create table Health
+(Patient_ID smallint NOT NULL,Patient_name varchar(30)NOT NULL,Ailment varchar(20),
+Date_of_visit date,Weight int,Doctor_Name varchar(20)NOT NULL,primary key(Patient_ID));
+
+insert into Health values
+(1,'John Smith','Hypertension','15-01-2024',180,'Dr.Emily Carter'),
+(2,'Micheal Johnson','Anxiety','20-02-2024',175,'Dr.Brian Wilson'),
+(3,'David Williams','Diabetes_Type 2','05-03-2024',200,' Dr.Sarah Thompson'),
+(4,'James Brown','Asthma','10-04-2024',165, ' Dr.Laura Martinez'),
+(5,'Robert Jones', 'Back Pain','15-05-2024',190,'Dr.Kevin Ramirez');
 
 create table Medicine (medicine_name varchar(100) NOT NULL,
 patient_name varchar(100) NOT NULL,
