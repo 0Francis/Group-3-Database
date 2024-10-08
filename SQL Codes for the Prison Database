@@ -56,3 +56,14 @@ insert into staff(Staff_ID,Full_Name,date_of_birth,occupation)values
 (128,'David Brown','1992-12-01','cook'),
 (129,'Angela Martinez','1986-08-19','cleaner'),
 (130,'Dr. Kevin Ramirez','1983-04-27','Doctor');
+
+create table inmates(Serial_No int, full_name varchar(50),gender varchar(10),birthdate date,bloodtype varchar(50),weight int,height int,length_of_sentence varchar(10),cell_No int);
+insert into inmates(Serial_No,full_name,gender,birthdate,bloodtype,weight,height,length_of_sentence,cell_No) values
+(1,'John Smith','M','1985-05-15','O+',180,72,'10 years',101),
+(2,'Michael Johnson','M','1990-11-22','A-',175,70,'5 years',101),
+(3,'David Williams','M','1982-07-30','B+',200,68,'15 years',202),
+(4,'James Brown','M','1995-03-10','AB-',165,74,'8 years',303),
+(5,'Robert Jones','M','1988-09-05','O-',190,71,'20 years',404),
+(6,'William Garcia','M','1975-12-14','A-',210,75,'25 years',202),
+(7,'Charles Rodriguez','M','2000-10-09','A+',180,72,'13 years',404);
+select*from inmates;
