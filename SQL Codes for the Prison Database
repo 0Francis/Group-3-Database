@@ -43,3 +43,16 @@ insert into Cell table(Cell _Number, Inmate _Name,Guard _ID)values
 (3,202,'David Williams',2),
 (4,303,'James Brown',3),
 (5,404,'Robert Jones', 'Charles Rodriguez',4);
+
+Create table staff(Staff_ID int,Full_Name varchar(30),date_of_birth date,occupation varchar(20),Primary key(Staff_ID));
+insert into staff(Staff_ID,Full_Name,date_of_birth,occupation)values
+(121,'Dr.Emily Carter','1980-05-20','doctor'),
+(122,'Dr.Brian Wilson','1975-03-14','doctor'),
+(123,'Sarah Thompson','1990-07-30','doctor'),
+(124,'James O Connor','1988-11-05','cook'),
+(125,'Maria Gonzalez','1995-02-18','cook'),
+(126,'John Anderson','1982-09-25','cleaner'),
+(127,'Lucy Smith','1978-06-12','cleaner'),
+(128,'David Brown','1992-12-01','cook'),
+(129,'Angela Martinez','1986-08-19','cleaner'),
+(130,'Dr. Kevin Ramirez','1983-04-27','Doctor');
