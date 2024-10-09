@@ -67,3 +67,12 @@ insert into inmates(Serial_No,full_name,gender,birthdate,bloodtype,weight,height
 (6,'William Garcia','M','1975-12-14','A-',210,75,'25 years',202),
 (7,'Charles Rodriguez','M','2000-10-09','A+',180,72,'13 years',404);
 select*from inmates;
+
+create table guards (Guard_ID int,Guard_Name varchar(255),Cell_Block varchar(1),Cell_Number int,PRIMARY KEY (Guard_ID));
+insert into guards (Guard_ID, Guard_Name, Cell_Block, Cell_Number) 
+values
+    (10112, 'Mark Stevens', 'A', 101),
+    (10122, 'Rachel Adams', 'B', 202),
+    (10133, 'Thomas Lee', 'C', 303),
+    (10144, 'Jessica Brown', 'D', 404),
+    (10155, 'Micheal Johnson', 'E', 505);
