@@ -13,3 +13,11 @@ insert into Health values
 (10130,'David Williams','Diabetes_Type 2','05-03-2024',200,' Dr.Sarah Thompson'),
 (10140,'James Brown','Asthma','10-04-2024',165, ' Dr.Laura Martinez'),
 (10150,'Robert Jones', 'Back Pain','15-05-2024',190,'Dr.Kevin Ramirez');
+
+create table Medicine (medicine_name varchar(100) NOT NULL,
+patient_name varchar(100) NOT NULL,
+dosage varchar(100) NOT NULL,
+period_of_time varchar(100) NOT NULL,
+prescribed_by varchar(100) NOT NULL,
+patient_id int NOT NULL,
+foreign key (patient_id) references Health (patient_id));
