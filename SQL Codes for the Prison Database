@@ -98,10 +98,9 @@ cell_block varchar(5) NOT NULL,
 cell_number int NOT NULL,
 primary key (guard_id));
 
-insert into Guards (guard_id, guard_name, cell_block, cell_number) 
-values
-    (10112, 'Mark Stevens', 'A', 101),
-    (10122, 'Rachel Adams', 'B', 202),
-    (10133, 'Thomas Lee', 'C', 303),
-    (10144, 'Jessica Brown', 'D', 404),
-    (10155, 'Micheal Johnson', 'E', 505);
+insert into Guards (guard_id, guard_name, cell_block, cell_number) values
+(10112, 'Mark Stevens', 'A', 101),
+(10122, 'Rachel Adams', 'B', 202),
+(10133, 'Thomas Lee', 'C', 303),
+(10144, 'Jessica Brown', 'D', 404),
+(10155, 'Micheal Johnson', 'E', 505);
