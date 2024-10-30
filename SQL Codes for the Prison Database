@@ -21,3 +21,11 @@ period_of_time varchar(100) NOT NULL,
 prescribed_by varchar(100) NOT NULL,
 patient_id int NOT NULL,
 foreign key (patient_id) references Health (patient_id));
+
+insert into Medicine (medicine_name,patient_name,dosage,period_of_time,prescribed_by, patient_id) values
+('Lisinopril','John Smith','10 mg/day','30 days','Dr.Emily Carter',10100),
+('Sertraline','Michael Johnson','50 mg/day','60 days','Dr.Brian Wilsion',10120),
+('Metformin','David Williams','500 mg/day','90 days','Dr.Sarah Thompson',10130),
+('Albuterol','James Brown','As needed','60 days','Dr.Laura Martinez',10140),
+('Ibuprofen','Robert Jones','400 mg/day','14 days','Dr.Kevin Ramirez',10150);
+
