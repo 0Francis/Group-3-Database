@@ -40,3 +40,16 @@ insert into Inventory (item,quantity,staff_id) values
 ('Cleaning Supplies','75',126),
 ('Medical Equipment','30',123),
 ('Kitchen Untenslis','20',124);
+
+create table Cells (cell_number int NOT NULL, 
+inmate_name varchar(100) NOT NULL,
+guard_id int NOT NULL,
+primary key(cell_number),
+foreign key (guard_id) references Guards (guard_id));
+
+insert into Cells (cell_number, inmate_name,guard_id)values
+(101,'John Smith, Michael Johnson',10112),
+(202,'David Williams',10122),
+(303,'James Brown',10133),
+(505,'Robert Jones,Charles Rodriguez',10155);
+
