@@ -6,3 +6,10 @@ date_of_visit date NOT NULL,
 weight int NOT NULL,
 doctor_name varchar(20)NOT NULL,
 primary key(patient_id));
+
+insert into Health values
+(10100,'John Smith','Hypertension','15-01-2024',180,'Dr.Emily Carter'),
+(10120,'Micheal Johnson','Anxiety','20-02-2024',175,'Dr.Brian Wilson'),
+(10130,'David Williams','Diabetes_Type 2','05-03-2024',200,' Dr.Sarah Thompson'),
+(10140,'James Brown','Asthma','10-04-2024',165, ' Dr.Laura Martinez'),
+(10150,'Robert Jones', 'Back Pain','15-05-2024',190,'Dr.Kevin Ramirez');
