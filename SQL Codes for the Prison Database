@@ -29,3 +29,14 @@ insert into Medicine (medicine_name,patient_name,dosage,period_of_time,prescribe
 ('Albuterol','James Brown','As needed','60 days','Dr.Laura Martinez',10140),
 ('Ibuprofen','Robert Jones','400 mg/day','14 days','Dr.Kevin Ramirez',10150);
 
+create table Inventory (item varchar(100) NOT NULL,
+quantity varchar(100) NOT NULL,
+staff_id int NOT NULL,
+foreign key (staff_id) references staff (staff_id));
+
+insert into Inventory (item,quantity,staff_id) values
+('Medical Supplies','50',121),
+('Cooking Ingredients','100',125),
+('Cleaning Supplies','75',126),
+('Medical Equipment','30',123),
+('Kitchen Untenslis','20',124);
