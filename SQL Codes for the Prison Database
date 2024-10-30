@@ -53,3 +53,8 @@ insert into Cells (cell_number, inmate_name,guard_id)values
 (303,'James Brown',10133),
 (505,'Robert Jones,Charles Rodriguez',10155);
 
+Create table staff(staff_id int NOT NULL,
+full_name varchar(30) NOT NULL,
+date_of_birth date NOT NULL,
+occupation varchar(20) NOT NULL,
+primary key(staff_id));
