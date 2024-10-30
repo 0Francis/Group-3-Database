@@ -71,3 +71,9 @@ insert into staff(staff_id,full_name,date_of_birth,occupation)values
 (129,'Angela Martinez','1986-08-19','cleaner'),
 (130,'Dr. Kevin Ramirez','1983-04-27','Doctor');
 
+create table inmates(serial_no int NOT NULL, 
+full_name varchar(50) NOT NULL,
+gender varchar(10) NOT NULL,
+birthdate date NOT NULL,
+bloodtype varchar(50) NOT NULL,
+weight int NOT NULL,
