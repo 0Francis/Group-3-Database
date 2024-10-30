@@ -1,78 +1,8 @@
 create table Health
-(Patient_ID smallint NOT NULL,Patient_name varchar(30)NOT NULL,Ailment varchar(20),
-Date_of_visit date,Weight int,Doctor_Name varchar(20)NOT NULL,primary key(Patient_ID));
-
-insert into Health values
-(1,'John Smith','Hypertension','15-01-2024',180,'Dr.Emily Carter'),
-(2,'Micheal Johnson','Anxiety','20-02-2024',175,'Dr.Brian Wilson'),
-(3,'David Williams','Diabetes_Type 2','05-03-2024',200,' Dr.Sarah Thompson'),
-(4,'James Brown','Asthma','10-04-2024',165, ' Dr.Laura Martinez'),
-(5,'Robert Jones', 'Back Pain','15-05-2024',190,'Dr.Kevin Ramirez');
-
-create table Medicine (medicine_name varchar(100) NOT NULL,
-patient_name varchar(100) NOT NULL,
-dosage int NOT NULL,
-period_of_time varchar(100) NOT NULL,
-prescribed_by varchar(100) NOT NULL,
-patientID int,
-foreign key (patientID) references Health (patientID));
-
-insert into Medicine (medicine_name,patient_name,dosage,period_of_time,prescribed_by, patientID) values
-('Lisinopril','John Smith','10 mg/day','30 days','Dr.Emily Carter',1),
-('Sertraline','Michael Johnson','50 mg/day','60 days','Dr.Brian Wilsion',2),
-('Metformin','David Williams','500 mg/day','90 days','Dr.Sarah Thompson',3),
-('Albuterol','James Brown','As needed','60 days','Dr.Laura Martinez',4),
-('Ibuprofen','Robert Jones','400 mg/day','14 days','Dr.Kevin Ramirez',5);
-
-create table Inventory (item varchar(100) NOT NULL,
-quantity varchar(100) NOT NULL,
-staffID int,
-foreign key (staffID) references Staff (staffID));
-
-insert into Inventory (item,quantity,staffID) values
-('Medical Supplies','50',1),
-('Cooking Ingredients','100',4),
-('Cleaning Supplies','75',6),
-('Medical Equipment','30',3),
-('Kitchen Untenslis','20',5);
-
-create table Cells(Cell _Number int, Inmate _Name varchar(30),Guard _ID int)Primary key(Cell _Number));
-
-insert into Cell table(Cell _Number, Inmate _Name,Guard _ID)values
-(1,101,'John Smith', 'Michael Johnson'1),
-(3,202,'David Williams',2),
-(4,303,'James Brown',3),
-(5,404,'Robert Jones', 'Charles Rodriguez',4);
-
-Create table staff(Staff_ID int,Full_Name varchar(30),date_of_birth date,occupation varchar(20),Primary key(Staff_ID));
-insert into staff(Staff_ID,Full_Name,date_of_birth,occupation)values
-(121,'Dr.Emily Carter','1980-05-20','doctor'),
-(122,'Dr.Brian Wilson','1975-03-14','doctor'),
-(123,'Sarah Thompson','1990-07-30','doctor'),
-(124,'James O Connor','1988-11-05','cook'),
-(125,'Maria Gonzalez','1995-02-18','cook'),
-(126,'John Anderson','1982-09-25','cleaner'),
-(127,'Lucy Smith','1978-06-12','cleaner'),
-(128,'David Brown','1992-12-01','cook'),
-(129,'Angela Martinez','1986-08-19','cleaner'),
-(130,'Dr. Kevin Ramirez','1983-04-27','Doctor');
-
-create table inmates(Serial_No int, full_name varchar(50),gender varchar(10),birthdate date,bloodtype varchar(50),weight int,height int,length_of_sentence varchar(10),cell_No int);
-insert into inmates(Serial_No,full_name,gender,birthdate,bloodtype,weight,height,length_of_sentence,cell_No) values
-(1,'John Smith','M','1985-05-15','O+',180,72,'10 years',101),
-(2,'Michael Johnson','M','1990-11-22','A-',175,70,'5 years',101),
-(3,'David Williams','M','1982-07-30','B+',200,68,'15 years',202),
-(4,'James Brown','M','1995-03-10','AB-',165,74,'8 years',303),
-(5,'Robert Jones','M','1988-09-05','O-',190,71,'20 years',404),
-(6,'William Garcia','M','1975-12-14','A-',210,75,'25 years',202),
-(7,'Charles Rodriguez','M','2000-10-09','A+',180,72,'13 years',404);
-select*from inmates;
-
-create table guards (Guard_ID int,Guard_Name varchar(255),Cell_Block varchar(1),Cell_Number int,PRIMARY KEY (Guard_ID));
-insert into guards (Guard_ID, Guard_Name, Cell_Block, Cell_Number) 
-values
-    (10112, 'Mark Stevens', 'A', 101),
-    (10122, 'Rachel Adams', 'B', 202),
-    (10133, 'Thomas Lee', 'C', 303),
-    (10144, 'Jessica Brown', 'D', 404),
-    (10155, 'Micheal Johnson', 'E', 505);
+(patient_id int NOT NULL,
+patient_name varchar(30)NOT NULL,
+ailment varchar(20) NOT NULL,
+date_of_visit date NOT NULL,
+weight int NOT NULL,
+doctor_name varchar(20)NOT NULL,
+primary key(patient_id));
