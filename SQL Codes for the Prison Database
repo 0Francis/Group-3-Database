@@ -58,3 +58,16 @@ full_name varchar(30) NOT NULL,
 date_of_birth date NOT NULL,
 occupation varchar(20) NOT NULL,
 primary key(staff_id));
+
+insert into staff(staff_id,full_name,date_of_birth,occupation)values
+(121,'Dr.Emily Carter','1980-05-20','doctor'),
+(122,'Dr.Brian Wilson','1975-03-14','doctor'),
+(123,'Sarah Thompson','1990-07-30','doctor'),
+(124,'James O Connor','1988-11-05','cook'),
+(125,'Maria Gonzalez','1995-02-18','cook'),
+(126,'John Anderson','1982-09-25','cleaner'),
+(127,'Lucy Smith','1978-06-12','cleaner'),
+(128,'David Brown','1992-12-01','cook'),
+(129,'Angela Martinez','1986-08-19','cleaner'),
+(130,'Dr. Kevin Ramirez','1983-04-27','Doctor');
+
