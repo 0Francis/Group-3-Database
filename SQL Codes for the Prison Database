@@ -104,3 +104,12 @@ insert into Guards (guard_id, guard_name, cell_block, cell_number) values
 (10133, 'Thomas Lee', 'C', 303),
 (10144, 'Jessica Brown', 'D', 404),
 (10155, 'Micheal Johnson', 'E', 505);
+
+select * from Health;
+update Staff set date_of_birth= '1998-02-18' where staff_id=125;
+select * from Staff;
+
+delete from Guards where guard_id=10144;
+select * from Guards;
+alter table Inmates
+add constraint check_gender check (gender='M');
