@@ -116,3 +116,4 @@ add constraint check_gender check (gender='M');
 
 select * from Medicine;
 select * from Inventory;
+select * from Cells;
