@@ -113,3 +113,5 @@ delete from Guards where guard_id=10144;
 select * from Guards;
 alter table Inmates
 add constraint check_gender check (gender='M');
+
+select * from Medicine;
