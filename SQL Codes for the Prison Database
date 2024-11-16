@@ -7,7 +7,7 @@ weight int NOT NULL,
 doctor_name varchar(20)NOT NULL,
 primary key(patient_id));
 
-insert into Health values
+insert into Health (patient_id,patient_name,ailment,date_of_visit,weight,doctor_name) values
 (10100,'John Smith','Hypertension','15-01-2024',180,'Dr.Emily Carter'),
 (10120,'Micheal Johnson','Anxiety','20-02-2024',175,'Dr.Brian Wilson'),
 (10130,'David Williams','Diabetes_Type 2','05-03-2024',200,' Dr.Sarah Thompson'),
