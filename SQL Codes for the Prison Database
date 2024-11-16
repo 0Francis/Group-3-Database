@@ -118,3 +118,4 @@ select * from Medicine;
 select * from Inventory;
 select * from Cells;
 Select* from Staff;
+Select* from Inmates;
